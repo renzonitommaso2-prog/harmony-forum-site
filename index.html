@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HARMONY Board</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="assets/logo.png" alt="Harmony logo" />
+      <div>
+        <h1>[ HARMONY ]</h1>
+        <p>Augmented Reality / Project Archive</p>
+      </div>
+    </div>
+    <div class="stats" aria-label="Forum stats">
+      <span>Members: <strong>60</strong></span>
+      <span>Online: <strong>347</strong></span>
+      <span>Posts: <strong>1.203.455</strong></span>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <a href="#welcome">HOME</a>
+    <a href="#hardware">HARDWARE</a>
+    <a href="#experience">EXPERIENCE</a>
+    <a href="#media">MEDIA</a>
+    <a href="#bibliografia">TOOLS</a>
+  </nav>
+
+  <main class="forum">
+    <section id="welcome" class="thread">
+      <div class="thread-title">★ Welcome to HARMONY HQ <span>[-]</span></div>
+      <article class="post">
+        <aside class="user">
+          <div class="avatar admin">ADMIN</div>
+          <strong>HarmonyOfficial</strong>
+          <span>Founder</span>
+          <small>Posts: 12,847<br />Joined: 2021</small>
+        </aside>
+        <div class="message">
+          <div class="meta">Posted: Today, 09:00 <b>#1</b></div>
+          <h2>HARMONY</h2>
+          <p>Un archivio navigabile del progetto: prodotto, identita visiva, modelli 3D, ambiente interattivo, pubblicita e fumetto.</p>
+          <figure class="product-shot">
+            <img src="assets/prodotto.png" alt="Prodotto Harmony" />
+          </figure>
+        </div>
+      </article>
+    </section>
+
+    <section id="hardware" class="thread">
+      <div class="thread-title">◆ Hardware / Models <span>[-]</span></div>
+      <article class="post">
+        <aside class="user">
+          <div class="avatar">MOD</div>
+          <strong>RenderLab</strong>
+          <span>Moderator</span>
+          <small>Meshy.ai export<br />GLB preview</small>
+        </aside>
+        <div class="message">
+          <div class="meta">Posted: Today, 10:15 <b>#1</b></div>
+          <p>Due versioni del dispositivo in rotazione automatica: bozza volumetrica e modello texturizzato.</p>
+          <div class="model-grid">
+            <section class="model-panel">
+              <h3>Modello base</h3>
+              <canvas class="model-viewer" data-model="assets/modello.glb" aria-label="Modello 3D base"></canvas>
+              <p class="fallback">Viewer 3D non caricato. <a href="assets/modello.glb">Scarica modello base</a></p>
+            </section>
+            <section class="model-panel">
+              <h3>Modello texturizzato</h3>
+              <canvas class="model-viewer" data-model="assets/modello_textured.glb" aria-label="Modello 3D texturizzato"></canvas>
+              <p class="fallback">Viewer 3D non caricato. <a href="assets/modello_textured.glb">Scarica modello texturizzato</a></p>
+            </section>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="experience" class="thread">
+      <div class="thread-title">⚡ Experience / Walking Simulator <span>[-]</span></div>
+      <article class="post">
+        <aside class="user">
+          <div class="avatar neural">DEV</div>
+          <strong>NeuralDev</strong>
+          <span>Moderator</span>
+          <small>Canvas HTML5<br />p5-style audio</small>
+        </aside>
+        <div class="message">
+          <div class="meta">Posted: Today, 11:30 <b>#1</b></div>
+          <div class="terminal">
+            <div class="terminal-bar">HARMONY Neural Terminal v1.0</div>
+            <p>C:\HARMONY&gt; init_cognitive_filter.exe</p>
+            <p>Loading neural drivers... OK</p>
+            <p>Separating signal from overload... OK</p>
+          </div>
+          <iframe class="game-frame" src="walking-simulator/index.html" title="Harmony walking simulator" allow="autoplay"></iframe>
+        </div>
+      </article>
+    </section>
+
+    <section id="media" class="thread">
+      <div class="thread-title">▰ Media Gallery <span>[-]</span></div>
+      <article class="post">
+        <aside class="user">
+          <div class="avatar fan">IMG</div>
+          <strong>ArchiveFan99</strong>
+          <span>Member</span>
+          <small>Ads / Comic<br />Visual assets</small>
+        </aside>
+        <div class="message">
+          <div class="meta">Posted: Today, 14:32 <b>#1</b></div>
+          <div class="poster-grid">
+            <figure>
+              <img src="assets/pubblicita_forte.png" alt="Pubblicita forte Harmony" />
+              <figcaption>Pubblicita forte</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/pubblicita_debole.png" alt="Pubblicita debole Harmony" />
+              <figcaption>Pubblicita debole</figcaption>
+            </figure>
+          </div>
+          <figure class="comic">
+            <img src="assets/fumetto.png" alt="Pagina fumetto Harmony VR Magazine" />
+            <figcaption>Fumetto / HARMONY VR Magazine</figcaption>
+          </figure>
+        </div>
+      </article>
+    </section>
+
+    <section id="bibliografia" class="thread">
+      <div class="thread-title">▣ Bibliografia / Strumenti usati <span>[-]</span></div>
+      <article class="post">
+        <aside class="user">
+          <div class="avatar admin">REF</div>
+          <strong>ToolIndex</strong>
+          <span>Archivist</span>
+          <small>Project notes<br />Exam archive</small>
+        </aside>
+        <div class="message">
+          <div class="meta">Posted: Today, 17:45 <b>#1</b></div>
+          <ul class="tool-list">
+            <li>Codex e VS Code</li>
+            <li>p5.js e p5.sound</li>
+            <li>Meshy.ai per generare il modello 3D</li>
+            <li>OpenGameArt.org</li>
+            <li>Gemini Nano Banana</li>
+            <li>Audacity per separare tracce audio da "Discolabirinto" dei Subsonica</li>
+            <li>Devin AI per la prima bozza del sito</li>
+            <li>Canva per fumetto, pubblicita e logo</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <strong>[ HARMONY ]</strong>
+    <span>Progetto universitario di produzione multimediale</span>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
